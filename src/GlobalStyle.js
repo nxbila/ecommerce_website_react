@@ -165,9 +165,11 @@ input, textarea{
   }
 
    @media (max-width: ${({ theme }) => theme.media.mobile}) {
-       html {
+    html {
       font-size: 50%;
-    }
+    
+    }  
+    
 
 .grid{
   gap: 3.2rem;
