@@ -33,9 +33,22 @@ const Contact = () => {
     }
   `;
 
-  return <Wrapper>
-    <h1>Contact</h1>
-  </Wrapper>;
+  return (
+  <Wrapper>
+    <h1 className="common-heading">Contact</h1>
+    <iframe title="Our Google Map Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59348.58915025278!2d39.1647707!3d21.6137443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d10044cd8edb%3A0x8f81370fb685f24b!2sAziz%20Mall!5e0!3m2!1sen!2ssa!4v1720279212485!5m2!1sen!2ssa" width="100%" height="450"style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+    <div className="container">
+      <div className="contact-form">
+        <form action = "https://formspree.io/f/mzzpbywb" method="POST" className="contact-inputs">
+          <input type="text" placeholder="Username" name = "username" required autoComplete="off" />
+          <input type="Email" placeholder="Email" name = 'email' required autoComplete="off" />
+          <textarea name="Message" cols="30" rows="10" required autoComplete="off" placeholder="Enter your message"></textarea>
+          <input type="submit" value = "send"/>
+        </form>
+      </div>
+    </div>
+  </Wrapper>
+  )
 };
 
 export default Contact;

@@ -1,9 +1,12 @@
 import React from 'react'
 
+import {useProductContext} from './context/ProductContext';
+
 const About = () => {
-  return (
-    <div>About</div>
-  )
+  const {myName} = useProductContext();
+  return <div>About {myName} </div>
+
+  
 }
 
 export default About
